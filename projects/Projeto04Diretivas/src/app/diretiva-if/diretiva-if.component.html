@@ -1,1 +1,12 @@
-<p>diretiva-if works!</p>
+<h1>*ngIf</h1>
+
+<div *ngIf="mostrarCursos; else emptyBloc">
+  Lista de cursos aqui
+</div>
+
+<ng-template #emptyBloc>
+  <div>Não existem cursos para serem listados.</div>
+</ng-template>
+
+<br />
+<button (click)="onMostrarCursos()">Mostrar ou esconder cursos</button>
