@@ -1,0 +1,19 @@
+<h1>
+  <i
+    class="fa-thumbs-up"
+    [class.fas]="meuFavorito"
+    [class.far]="!meuFavorito"
+    (click)="onClick()"
+  ></i>
+</h1>
+
+<h1>
+  <i
+    class="fa-thumbs-up"
+    [ngClass]="{
+      far: !meuFavorito,
+      fas: meuFavorito
+    }"
+    (click)="onClick()"
+  ></i>
+</h1>
