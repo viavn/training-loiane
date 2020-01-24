@@ -12,12 +12,12 @@ export class CursosComponent implements OnInit {
   cursos: string[] = [];
   cursosService: CursosService;
 
-  constructor() {
+  constructor(private _cursoService: CursosService) {
     this.cursosService = new CursosService();
   }
 
   ngOnInit() {
-    this.cursos = this.cursosService.getCursos();
+    this.cursos = this._cursoService.getCursos();
   }
 
 }
