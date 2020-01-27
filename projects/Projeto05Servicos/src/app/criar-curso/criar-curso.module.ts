@@ -12,8 +12,6 @@ import { CriarCursoComponent } from './criar-curso.component';
     CommonModule
   ],
   exports: [CriarCursoComponent],
-  providers: [
-    CursosService
-  ]
+  providers: [CursosService]
 })
 export class CriarCursoModule { }
